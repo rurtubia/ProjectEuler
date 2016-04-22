@@ -1,0 +1,14 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix} This work by Randy Urtubia is licensed under the Creative Commons
+${licensePrefix} Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. 
+${licensePrefix} You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+${licensePrefix} NonCommercial — You may not use the material for commercial purposes.
+${licensePrefix} ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+${licensePrefix} Based on a work at www.notnull.cl
+${licensePrefix} To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+<#if licenseLast??>
+${licenseLast}
+</#if>
+

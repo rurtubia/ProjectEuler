@@ -1,13 +1,23 @@
 /*
+ *  This work by Randy Urtubia is licensed under the Creative Commons.
+ * 
+ *  Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+ *    You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+ *  NonCommercial: You may not use the material for commercial purposes.
+ *  ShareAlike: If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+ * 
+ *  Based on a work at http://www.notnull.cl.
+ *  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+ */
+
+package project.euler.problems;
+
+/**
  * Problem 1: Multiples of 3 and 5 - Project Euler.net
  * If we list all the natural numbers below 10 that are multiples of 3 or 5, 
  * we get 3, 5, 6 and 9. The sum of these multiples is 23.
  * Find the sum of all the multiples of 3 or 5 below 1000.
- */
-package project.euler.problems;
-
-/**
- *
+ * 
  * @author Randy
  */
 

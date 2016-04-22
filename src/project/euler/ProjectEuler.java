@@ -9,6 +9,9 @@ package project.euler;
  *
  * @author Randy
  */
+
+import project.euler.entities.*;
+
 public class ProjectEuler {
 
     /**
@@ -16,6 +19,9 @@ public class ProjectEuler {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MultiplesOf3And5 multiplesOf3and5 = new MultiplesOf3And5();
+        
+        System.out.println(multiplesOf3and5.calculo(3, 5, 1000, 0));
     }
     
 }

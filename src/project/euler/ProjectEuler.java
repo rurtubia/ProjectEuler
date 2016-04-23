@@ -37,13 +37,32 @@ public class ProjectEuler {
         
         Problem1_MultiplesOf3And5 otrosNumeros = new Problem1_MultiplesOf3And5(3, 2, 10);
         otrosNumeros.calculate();
-        */
+        
         
         Problem2_EvenFibonacciNumbers SumOfEvenFibonacci = new Problem2_EvenFibonacciNumbers();
         System.out.println(SumOfEvenFibonacci.calculate());
         System.out.println("    ");
         Problem2_EvenFibonacciNumbers SumOfOtherFibonacci = new Problem2_EvenFibonacciNumbers(100, true);
         System.out.println(SumOfOtherFibonacci.calculate());
+        */
         
+        Problem3_LargestPrimeFactor  lpf = new Problem3_LargestPrimeFactor();
+//        lpf.isPrime(31);
+//        lpf.isPrime(32);
+//        lpf.isPrime(33);
+//        lpf.isPrime(34);
+//        lpf.isPrime(35);
+//        lpf.isPrime(36);
+//        lpf.isPrime(37);
+//        lpf.isPrime(38);
+//        lpf.isPrime(39);
+//        lpf.isPrime(40);
+//        System.out.println(lpf.factors());
+          lpf.largestPrimeFactorSlow(999999999);
+       
+       
+       
+       
+       
     }
 }

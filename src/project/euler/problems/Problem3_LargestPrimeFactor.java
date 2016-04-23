@@ -117,20 +117,44 @@ public class Problem3_LargestPrimeFactor {
         return largestPrimeFactor;
     }
     
+    /**
+     * Optimizes the search time trying to look for the largest prime factor of a number.
+     * Receives no parameters, so it uses the default value.
+     * @return Returns the largest prime factor of a number.
+     */
     public long largestPrimeFactorQuick(){
         long largestPrimeFactor = 0L;
-        
-        //optimization trick: when evaluating which factors are prime numbers, 
-        //break the search at the moment in which three factors have been found, 
-        //declaring the number as non-prime.  
-        
-        //Search from the factor to 1
-            //Find the next highest factor of a nummber.
-                //Find out if the factor is prime. 
-                    //If prime, break
-                    //Else, repeat.
-        
-        
+        for (long i = this.number; i > 0; i--) {
+           if (this.isFactor(this.number, i)){
+                if (this.isPrime(i)) {
+                   largestPrimeFactor = i;
+                System.out.println(largestPrimeFactor);
+                break;
+                }
+            } 
+        }
+        return largestPrimeFactor;
+    }
+    
+    /**
+     * Optimizes the search time trying to look for the largest prime factor of a number.
+     * @param l The long integer to be evaluated.
+     * @return Returns the largest prime factor of a number.
+     */
+    public long largestPrimeFactorQuick(long l){
+        long largestPrimeFactor = l;
+        for (long i = l; i > 0; i--) {
+            if (this.isFactor(l, i)) {
+                //System.out.println(i + " is a factor");
+                if (this.isPrime(i)) {
+                    //System.out.println(i + " is prime!");
+                    System.out.println(i);
+                    largestPrimeFactor = i;
+                    break;
+                }
+            }
+        }
+
         return largestPrimeFactor;
     }
     //FACTOR EVALUATION

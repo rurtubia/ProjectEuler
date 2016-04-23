@@ -65,10 +65,18 @@ public class ProjectEuler {
 //          Problem3_LargestPrimeFactor projectEulerNumber = new project.euler.problems.Problem3_LargestPrimeFactor();
 //          projectEulerNumber.largestPrimeFactorSlow();
        
-          Problem3_LargestPrimeFactor checkIfPrime = new project.euler.problems.Problem3_LargestPrimeFactor(600851475143L);
-          System.out.println(checkIfPrime.isPrime(600851475143L));
+    //      Problem3_LargestPrimeFactor checkIfPrime = new project.euler.problems.Problem3_LargestPrimeFactor(600851475143L);
+    //      System.out.println(checkIfPrime.isPrime(600851475143L));
        
-       
-       
+            Problem3_LargestPrimeFactor lpf = new Problem3_LargestPrimeFactor();
+            //SPEED TESTS:
+            //lpf.largestPrimeFactorQuick(127978132); //(total time: 13 seconds)31994533
+            //lpf.largestPrimeFactorSlow(127978132); //(total time: 14 seconds)
+            //lpf.largestPrimeFactorQuick(999999999); //(total time: 1 minute 41 seconds)333667
+            //lpf.largestPrimeFactorSlow(999999999); //(total time: 1 minute 42 seconds)333667
+            //lpf.largestPrimeFactorQuick(927978132); //(total time: 2 minutes 12 seconds)42701
+            //lpf.largestPrimeFactorSlow(927978132); //(total time: 2 minutes 14 seconds)42701
+            
+            
     }
 }

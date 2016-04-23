@@ -23,13 +23,6 @@ import java.util.ArrayList;
  * 
  */
 
-//ALGORITHM:
-    //go from 1 to the number entered
-        //find if i is prime.
-            //if i is prime, see if it is a prime factor of the number entered.
-            //store the largest number as the answer
-    //end loop
-
 public class Problem3_LargestPrimeFactor {   
     
     //class fields
@@ -56,6 +49,53 @@ public class Problem3_LargestPrimeFactor {
         this.number = number;
     }
 
+    /**
+     * Creates an instance of the class in which the number to be passed is set by the user
+     * @param l The long number to be used.
+     */
+    public Problem3_LargestPrimeFactor(long l) {
+        this.number = l;
+    }
+
+    /**
+     * Creates an instance of the class in which no number is passed, so the number used is the default value by project Euler.
+     * Note: the number by project Euler is extremely large, so the execution of the program will take very long.
+     * The Euler number is 600851475143
+     */
+    public Problem3_LargestPrimeFactor() {
+    }
+    
+    /**
+     * Executes the program using the default value.
+     * @return The largest prime factor for the number passed.
+     */
+    public long largestPrimeFactorSlow(){
+        long largestPrimeFactor = 0;
+        
+        ArrayList<Long> listOfFactors;
+        ArrayList<Long> listOfPrimeFactors;
+        listOfFactors = this.factors(this.number);
+        System.out.println(listOfFactors);
+        listOfPrimeFactors = this.listOfPrimeLongFactors(listOfFactors);
+        System.out.println(listOfPrimeFactors);
+        largestPrimeFactor = this.largestLongNumber(listOfPrimeFactors);
+        System.out.println(largestPrimeFactor);
+       
+        //Find the factors of a number.
+            //return an arraylist
+        //Find out which factors are primes
+            //return an arraylist
+        //Select the largest prime factor
+        
+        return largestPrimeFactor;
+    }
+    
+
+    /**
+     * Executes the program using a parameter.
+     * @param numberToEvaluate The long number to be evaluated.
+     * @return The largest prime factor for the number passed.
+     */
     public long largestPrimeFactorSlow(long numberToEvaluate){
         long largestPrimeFactor = 0L;
         

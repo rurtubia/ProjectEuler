@@ -46,7 +46,7 @@ public class ProjectEuler {
         System.out.println(SumOfOtherFibonacci.calculate());
         */
         
-        Problem3_LargestPrimeFactor  lpf = new Problem3_LargestPrimeFactor();
+//        Problem3_LargestPrimeFactor  lpf = new Problem3_LargestPrimeFactor();
 //        lpf.isPrime(31);
 //        lpf.isPrime(32);
 //        lpf.isPrime(33);
@@ -58,9 +58,15 @@ public class ProjectEuler {
 //        lpf.isPrime(39);
 //        lpf.isPrime(40);
 //        System.out.println(lpf.factors());
-          lpf.largestPrimeFactorSlow(999999999);
+          //lpf.largestPrimeFactorSlow(9999999999L);
+//          Problem3_LargestPrimeFactor userDefinedNumber = new project.euler.problems.Problem3_LargestPrimeFactor(3213);
+//          userDefinedNumber.largestPrimeFactorSlow();
+          
+//          Problem3_LargestPrimeFactor projectEulerNumber = new project.euler.problems.Problem3_LargestPrimeFactor();
+//          projectEulerNumber.largestPrimeFactorSlow();
        
-       
+          Problem3_LargestPrimeFactor checkIfPrime = new project.euler.problems.Problem3_LargestPrimeFactor(600851475143L);
+          System.out.println(checkIfPrime.isPrime(600851475143L));
        
        
        

@@ -338,5 +338,4 @@ public class Problem3_LargestPrimeFactor {
         }
         return largestNumber;
     }
-
 }

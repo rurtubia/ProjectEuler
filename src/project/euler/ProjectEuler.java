@@ -21,6 +21,8 @@ package project.euler;
  * @author Randy Urtubia
  */
 
+import java.util.HashSet;
+import java.util.Set;
 import project.euler.problems.*;
 
 public class ProjectEuler {
@@ -87,9 +89,13 @@ public class ProjectEuler {
 //            lpp.getProducts();
 //            lpp.getPalindromes(lpp.getProducts());
 //            lpp.findLargestNumber(lpp.getPalindromes(lpp.getProducts()));
-              System.out.println(lpp.findLargestPalindromeQuick()); //3 secods when run 10 times
-              System.out.println(lpp.findLargestPalindromeSlow()); //4 seconds when run 10 times
-            
+//              System.out.println(lpp.findLargestPalindromeQuick()); //3 secods when run 10 times
+//              System.out.println(lpp.findLargestPalindromeSlow()); //4 seconds when run 10 times
+//  
+              Problem5_SmallestMultiple sm = new Problem5_SmallestMultiple(10);
+              sm.setMaxNumber(17);
+              sm.findSmallestMultiple();
+              
 
             
 //lpp.findLargestPalindromeQuick();

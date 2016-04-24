@@ -69,8 +69,8 @@ public class Problem5_SmallestMultiple {
         int number = maxNumber;
         while (!isSmallestFound) {
             int noRemaindersCount = 1;
-            noRemaindersCount = countNoRemainders(maxNumber, number, noRemaindersCount);
-            smallestMultiple = compareNoRemaindersToMaxNumber(noRemaindersCount, maxNumber, smallestMultiple, number);
+            noRemaindersCount = countNoRemainders(number, noRemaindersCount);
+            smallestMultiple = compareNoRemaindersToMaxNumber(noRemaindersCount, smallestMultiple, number);
             number++;
         }
         System.out.println(smallestMultiple);
@@ -84,8 +84,8 @@ public class Problem5_SmallestMultiple {
      * @param noRemaindersCount
      * @return 
      */
-    private int countNoRemainders(int maxNumber, int number, int noRemaindersCount) {
-        for (int i = 2; i <= maxNumber; i++) {
+    private int countNoRemainders(int number, int noRemaindersCount) {
+        for (int i = 2; i <= this.maxNumber; i++) {
             if (number%i==0)
                 noRemaindersCount++;
             else
@@ -102,8 +102,8 @@ public class Problem5_SmallestMultiple {
      * @param number
      * @return 
      */
-    private int compareNoRemaindersToMaxNumber(int noRemaindersCount, int maxNumber, int smallestMultiple, int number) {
-        if (noRemaindersCount==maxNumber) {
+    private int compareNoRemaindersToMaxNumber(int noRemaindersCount, int smallestMultiple, int number) {
+        if (noRemaindersCount==this.maxNumber) {
             smallestMultiple = number;
             isSmallestFound = true;
         }

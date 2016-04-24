@@ -76,7 +76,24 @@ public class ProjectEuler {
             //lpf.largestPrimeFactorSlow(999999999); //(total time: 1 minute 42 seconds)333667
             //lpf.largestPrimeFactorQuick(927978132); //(total time: 2 minutes 12 seconds)42701
             //lpf.largestPrimeFactorSlow(927978132); //(total time: 2 minutes 14 seconds)42701
+                
+            Problem4_LargestPalindromeProduct lpp = new Problem4_LargestPalindromeProduct();
+//            lpp.isPalindrome(301);
+//            lpp.isPalindrome(456);
+//            lpp.isPalindrome(111);
+//            lpp.isPalindrome(6542);
+//            lpp.isPalindrome(6556);
             
+//            lpp.getProducts();
+//            lpp.getPalindromes(lpp.getProducts());
+//            lpp.findLargestNumber(lpp.getPalindromes(lpp.getProducts()));
+              System.out.println(lpp.findLargestPalindromeQuick()); //3 secods when run 10 times
+              System.out.println(lpp.findLargestPalindromeSlow()); //4 seconds when run 10 times
+            
+
+            
+//lpp.findLargestPalindromeQuick();
+            //lpp.findLargestPalindromeSlow();
             
     }
 }
